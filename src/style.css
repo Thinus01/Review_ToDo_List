@@ -2,47 +2,93 @@
   font-family: 'Poppins', sans-serif;
 }
 
-::-webkit-input-placeholder {
-  font-style: italic;
-}
-
 body {
   background-color: rgb(219, 219, 219);
   padding-left: 25%;
   padding-right: 25%;
 }
 
-#ToDo {
-  padding-left: 5%;
-  font-size: 250%;
-  float: left;
-  width: 89%;
+#container {
+  border: 2px solid #c4c5c6;
+  width: 60vw;
+  margin-top: 8vh;
+  box-shadow: 0 3px 3px 3px #c4c5c6;
+  background-color: white;
 }
 
-#refresh {
-  margin-top: 50px;
+#headline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.inputid {
-  width: 87%;
-  font-size: 200%;
-  padding-left: 5%;
+h1 {
+  font-weight: lighter;
+  margin-left: 2%;
 }
 
-.lists {
-  padding-left: 5%;
+form#form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2% 0;
+  border-top: 1px solid #d3d3d4;
+  border-bottom: 1px solid #d3d3d4;
 }
 
-.main-list {
-  padding-top: 15px;
+#new-task {
+  margin-left: 2%;
+  background: none;
+  border: none;
+  outline: none;
+  font-style: italic;
+  font-size: larger;
 }
 
-.list-item {
+#todo-container {
+  display: flex;
+  flex-direction: column;
+  padding-inline-start: 0;
+  margin: 0;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%;
+  border-bottom: 1px solid #d3d3d4;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.disc {
   font-size: 125%;
   width: 83%;
+  border: none;
 }
 
-.clear {
+.completed {
+  text-decoration: line-through;
+}
+
+.material-icons {
+  font-size: larger;
+  margin-right: 2%;
+  color: #808080;
+  cursor: pointer;
+}
+
+input[type=checkbox] {
+  cursor: pointer;
+}
+
+#clear {
+  cursor: pointer;
   margin-top: 20px;
   width: 100%;
   background-color: rgb(223, 219, 213);
@@ -53,16 +99,8 @@ body {
   font-size: 125%;
 }
 
-input {
-  border-style: hidden;
-}
-
-.no-outline:focus {
-  outline: none;
-}
-
-.TDBorder {
-  margin-top: 25%;
-  border: solid 1px gray;
-  background-color: white;
+#clear:hover {
+  color: #000;
+  font-size: medium;
+  text-transform: uppercase;
 }
